@@ -1,7 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
 
-count();
-
 const counterField = document.getElementById('counter')
 const minusButton = document.querySelector('#minus')
 const plusButton = document.querySelector('#plus')
@@ -11,10 +9,9 @@ const likes = document.querySelector('.likes')
 const submitButton = document.querySelector('#submit')
 const commentList = document.querySelector('#list')
 
-function count(){ setInterval(function() {
+let count = setInterval(function() {
     counterField.innerText++;
   }, 1000);
-}
 
 minusButton.addEventListener('click', function(e) {
   counterField.innerText--;
@@ -27,7 +24,7 @@ plusButton.addEventListener('click', function(e) {
 pauseButton.addEventListener('click', function(e) {
   if (pauseButton.innerText === 'Pause'){
     pauseButton.innerText = "Resume"
-    clearInterval(setInterval)
+    clearInterval(count)
 
 
     minusButton.disabled = true;
@@ -36,7 +33,10 @@ pauseButton.addEventListener('click', function(e) {
     submitButton.disabled = true;
   }
   else {
-    count()
+    let count = setInterval(function() {
+        counterField.innerText++;
+      }, 1000);
+
     pauseButton.innerText = "Pause"
     minusButton.disabled = false;
     plusButton.disabled = false;
