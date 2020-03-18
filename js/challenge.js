@@ -26,7 +26,7 @@ pauseButton.addEventListener('click', function(e) {
     pauseButton.innerText = "Resume"
     clearInterval(count)
     setTimeout(count)
-    counterField.innerText = '0'
+    counterField.innerText = 'Paused'
 
 
     minusButton.disabled = true;
