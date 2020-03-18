@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
-  count()
-});
+
+
 
 const counterField = document.getElementById('counter')
 const minusButton = document.querySelector('#minus')
@@ -43,3 +43,5 @@ pauseButton.addEventListener('click', function(e) {
     submitButton.disabled = false;
   }
 })
+
+});
