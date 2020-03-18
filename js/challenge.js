@@ -39,6 +39,11 @@ pauseButton.addEventListener('click', function(e) {
   }
   else {
     counter()
+    pauseButton.innerText = "Pause"
+    minusButton.disabled = false;
+    plusButton.disabled = false;
+    heartButton.disabled = false;
+    submitButton.disabled = false;
   }
   counterField.innerText = 'paused'
 })
