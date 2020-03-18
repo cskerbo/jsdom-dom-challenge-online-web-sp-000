@@ -9,6 +9,7 @@ const pauseButton = document.querySelector('#pause')
 const heartButton = document.querySelector('#heart')
 const likes = document.querySelector('.likes')
 const submitButton = document.querySelector('#submit')
+const submitButton = document.querySelector('#list')
 
 function counter() {
   let i = 0
