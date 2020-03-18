@@ -12,9 +12,12 @@ function counter() {
     counterField.innerHTML = i++
   }, 1000);
 
-  function countUp()
-  document.addEventListener()
+  function countUp(){
+  plusButton.addEventListener('click', function(e) {
+    i++
+  })
 }
+},
 
 function countUp() {
 
