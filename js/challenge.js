@@ -11,9 +11,10 @@ const likes = document.querySelector('.likes')
 const submitButton = document.querySelector('#submit')
 const commentList = document.querySelector('#list')
 
-function count() = setInterval(function() {
+function count(){ setInterval(function() {
     counterField.innerText++;
   }, 1000);
+}
 
 minusButton.addEventListener('click', function(e) {
   counterField.innerText--;
