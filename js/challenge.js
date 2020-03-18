@@ -45,5 +45,4 @@ pauseButton.addEventListener('click', function(e) {
     heartButton.disabled = false;
     submitButton.disabled = false;
   }
-  counterField.innerText = 'paused'
 })
