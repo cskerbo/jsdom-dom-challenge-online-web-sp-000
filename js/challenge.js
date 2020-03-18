@@ -21,3 +21,7 @@ function counter() {
 minusButton.addEventListener('click', function(e) {
   counterField.innerText--;
 })
+
+plusButton.addEventListener('click', function(e) {
+  counterField.innerText++;
+})
