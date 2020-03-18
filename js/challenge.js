@@ -53,4 +53,9 @@ heartButton.addEventListener('click', function(e){
   likes.innerHTML += `<li>${likedNumber} was liked 1 time.</li>`
 });
 
+submitButton.addEventListener('click', function(e){
+  let userComment = document.getElementById('comment-input').value
+  commentList.innerHTML += userComment
+}
+
 });
