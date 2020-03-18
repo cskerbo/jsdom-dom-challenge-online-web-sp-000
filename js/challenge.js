@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
 
-
+count();
 
 const counterField = document.getElementById('counter')
 const minusButton = document.querySelector('#minus')
@@ -11,7 +11,7 @@ const likes = document.querySelector('.likes')
 const submitButton = document.querySelector('#submit')
 const commentList = document.querySelector('#list')
 
-let count = setInterval(function() {
+function count() = setInterval(function() {
     counterField.innerText++;
   }, 1000);
 
