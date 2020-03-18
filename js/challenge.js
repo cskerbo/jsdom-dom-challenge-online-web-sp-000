@@ -16,14 +16,8 @@ function counter() {
   setInterval(function() {
     counterField.innerText++;
   }, 1000);
-
-  function countUp(){
-  plusButton.addEventListener('click', function(e) {
-    i++;
-  })
-}
 }
 
-function countUp() {
-
-}
+minusButton.addEventListener('click', function(e) {
+  counter.innerText--;
+})
