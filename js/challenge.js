@@ -6,5 +6,5 @@ function counter() {
   setInterval(function() {
     console.log((i++));
   }, 1000);
-  
+
 }
