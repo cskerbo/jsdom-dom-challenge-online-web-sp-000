@@ -48,7 +48,7 @@ pauseButton.addEventListener('click', function(e) {
   }
 })
 
-likes.addEventListener('click', function(e){
+heartButton.addEventListener('click', function(e){
   let likedNumber = counterField.innerText
   likes.innerHTML += `<li>${likedNumber} is liked 1 times.</li>`
 });
