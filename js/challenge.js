@@ -19,5 +19,5 @@ function counter() {
 }
 
 minusButton.addEventListener('click', function(e) {
-  counter.innerText--;
+  counterField.innerText--;
 })
