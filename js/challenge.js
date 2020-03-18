@@ -51,6 +51,6 @@ pauseButton.addEventListener('click', function(e) {
 likeButton.addEventListener('click', function(e){
   let likedNumber = counterField.innerText
   likes.innerHTML += `<li>${likedNumber} is liked 1 times.</li>`
-})
+});
 
 });
