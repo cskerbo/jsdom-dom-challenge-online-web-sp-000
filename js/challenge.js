@@ -35,6 +35,7 @@ pauseButton.addEventListener('click', function(e) {
     submitButton.disabled = true;
   }
   else {
+    counterField.innerText = '0'
     let count = setInterval(function() {
         counterField.innerText++;
       }, 1000);
