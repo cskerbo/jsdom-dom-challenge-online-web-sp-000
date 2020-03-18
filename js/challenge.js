@@ -1,3 +1,4 @@
+document.addEventListener("DOMContentLoaded", () => {
 
 const counterField = document.getElementById('counter')
 const minusButton = document.querySelector('#minus')
@@ -56,4 +57,6 @@ submitButton.addEventListener('click', function(e){
   e.preventDefault()
   let userComment = document.getElementById('comment-input').value
   commentList.innerHTML += `<p>"${userComment}" - Username</p>`
+});
+
 });
