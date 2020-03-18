@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-  counter()
+  count()
 });
 
 const counterField = document.getElementById('counter')
