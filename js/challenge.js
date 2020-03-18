@@ -1,4 +1,8 @@
 
+document.addEventListener("DOMContentLoaded", () => {
+  counter()
+});
+
 let counterField = document.getElementById('counter')
 
 function counter() {
@@ -8,4 +12,3 @@ function counter() {
   }, 1000);
 
 }
-counter();
