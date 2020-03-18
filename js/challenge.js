@@ -7,5 +7,6 @@ function counter() {
     counterField.innerHTML = i++
     console.log((i++));
   }, 1000);
-counter();
+
 }
+counter();
