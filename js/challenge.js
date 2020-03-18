@@ -14,10 +14,10 @@ function counter() {
 
   function countUp(){
   plusButton.addEventListener('click', function(e) {
-    i++
+    i++;
   })
 }
-},
+}
 
 function countUp() {
 
