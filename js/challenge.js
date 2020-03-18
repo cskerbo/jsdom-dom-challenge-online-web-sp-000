@@ -14,7 +14,6 @@ const commentList = document.querySelector('#list')
 let count = setInterval(function() {
     counterField.innerText++;
   }, 1000);
-}
 
 minusButton.addEventListener('click', function(e) {
   counterField.innerText--;
