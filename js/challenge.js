@@ -38,7 +38,7 @@ pauseButton.addEventListener('click', function(e) {
     submitButton.disabled = true;
   }
   else {
-    counter()
+
     pauseButton.innerText = "Pause"
     minusButton.disabled = false;
     plusButton.disabled = false;
