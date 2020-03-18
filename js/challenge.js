@@ -25,3 +25,9 @@ minusButton.addEventListener('click', function(e) {
 plusButton.addEventListener('click', function(e) {
   counterField.innerText++;
 })
+
+pauseButton.addEventListener('click', function(e) {
+  counterField.innerText = 'paused'
+})
+
+
