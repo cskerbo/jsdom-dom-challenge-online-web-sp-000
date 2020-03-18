@@ -56,7 +56,7 @@ heartButton.addEventListener('click', function(e){
 submitButton.addEventListener('click', function(e){
   e.preventDefault()
   let userComment = document.getElementById('comment-input').value
-  commentList.innerHTML += `<p>${userComment}</p>`
+  commentList.innerHTML += `<p>User said "${userComment}"</p>`
 });
 
 });
