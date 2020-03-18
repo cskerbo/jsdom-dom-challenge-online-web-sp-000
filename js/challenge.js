@@ -36,12 +36,11 @@ pauseButton.addEventListener('click', function(e) {
     submitButton.disabled = true;
   }
   else {
-
     let count = setInterval(function() {
         counterField.innerText++;
       }, 1000);
 
-    pauseButton.innerText = "Pause"
+    pauseButton.innerText = 'Pause'
     minusButton.disabled = false;
     plusButton.disabled = false;
     heartButton.disabled = false;
