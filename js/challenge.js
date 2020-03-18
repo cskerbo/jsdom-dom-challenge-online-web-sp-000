@@ -22,11 +22,12 @@ plusButton.addEventListener('click', function(e) {
 })
 
 pauseButton.addEventListener('click', function(e) {
+  e.preventDefault()
   if (pauseButton.innerText === 'Pause'){
     pauseButton.innerText = "Resume"
     clearInterval(count)
     setTimeout(count)
-    counterField.innerText = 'Paused'
+    counterField.innerText = '0'
 
 
     minusButton.disabled = true;
@@ -35,7 +36,7 @@ pauseButton.addEventListener('click', function(e) {
     submitButton.disabled = true;
   }
   else {
-    counterField.innerText = '0'
+
     let count = setInterval(function() {
         counterField.innerText++;
       }, 1000);
