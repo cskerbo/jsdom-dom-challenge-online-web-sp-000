@@ -11,7 +11,7 @@ const likes = document.querySelector('.likes')
 const submitButton = document.querySelector('#submit')
 const commentList = document.querySelector('#list')
 
-function counter() {
+let count = function counter() {
   let i = 0
   setInterval(function() {
     counterField.innerText++;
@@ -29,7 +29,7 @@ plusButton.addEventListener('click', function(e) {
 pauseButton.addEventListener('click', function(e) {
   if (pauseButton.innerText === 'Pause'){
     pauseButton.innerText = "Resume"
-    clearInterval(counter())
+    clearInterval(count)
 
 
     minusButton.disabled = true;
